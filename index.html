@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manu Kumar | Full Stack Developer</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="cursor"></div>
+    <div id="cursor-ring"></div>
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- NAV -->
+    <nav id="nav">
+        <div class="logo">MK.DEV</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="ham">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" onclick="closeMenu()">About</a>
+        <a href="#skills" onclick="closeMenu()">Skills</a>
+        <a href="#projects" onclick="closeMenu()">Projects</a>
+        <a href="#education" onclick="closeMenu()">Education</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-orb o1"></div>
+        <div class="hero-orb o2"></div>
+
+        <div class="hero-text">
+            <div class="eyebrow">
+                <div class="eyebrow-line"></div>
+                <span class="eyebrow-txt">Full Stack Developer</span>
+            </div>
+            <h1>
+                <span>MANU KUMAR</span>
+                <span class="grad">WEB DEVELOPER</span>
+            </h1>
+            <p class="hero-role">HTML · CSS · JavaScript · React · Node.js</p>
+            <p class="hero-desc">BCA Graduate from <strong>CCS University, Meerut</strong> crafting modern web
+                experiences. Intermediate in <strong>Front-End Developer</strong>. Open to <strong>internships &amp;
+                    entry-level opportunities</strong>.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn-p">View Projects</a>
+                <a href="#contact" class="btn-o">Hire Me</a>
+                <a href="Manu_Kumar_Resume (1) (5).pdf" download="Manu_Kumar_CV_2026.pdf" class="btn-r" id="resumeBtn" onclick="downloadResume(event)">⬇ Download CV</a>
+            </div>
+        </div>
+
+        <div class="hero-photo">
+            <div class="photo-ring">
+                <div class="photo-inner">
+                    <img src="myphoto.png" alt="myimage">
+                </div>
+            </div>
+            <div class="photo-badge">🟢 Open To Work</div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="about-grid">
+            <div class="rev-l">
+                <div class="s-ey">About Me</div>
+                <h2 class="s-title">Who Am I<span class="accent">?</span></h2>
+                <div class="s-line"></div>
+                <div class="about-text">
+                    <p>Hi! I'm <span class="hl">Manu Kumar</span>, a passionate <span class="hl2">Full Stack Web
+                            Developer</span> and BCA Graduate from CCS University, Meerut, UP.</p>
+                    <p>I build responsive, modern web apps using <span class="hl">React</span> on frontend and <span
+                            class="hl">Node.js</span> on backend — turning ideas into clean, efficient code.</p>
+                    <p>Intermediate in <span class="hl2">Front-End Developer</span> and AI-Assisted Problem Solving — always
+                        on the cutting edge of tech.</p>
+                    <p>Currently <span class="hl">open to internships</span> and entry-level opportunities to grow and
+                        make an impact.</p>
+                </div>
+            </div>
+            <div class="rev-r">
+                <div class="stats">
+                    <div class="stat">
+                        <div class="stat-n">BCA</div>
+                        <div class="stat-i"><strong>Graduate</strong><span>CCS University, Meerut</span></div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-n">5+</div>
+                        <div class="stat-i"><strong>Core Technologies</strong><span>HTML, CSS, JS, React, Node.js</span>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-n">AI</div>
+                        <div class="stat-i"><strong>Generative AI</strong><span>Beginner Level</span></div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-n">🔓</div>
+                        <div class="stat-i"><strong>Open To Work</strong><span>Delhi NCR · Remote · Hybrid</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <div class="s-ey reveal">Tech Stack</div>
+        <h2 class="s-title reveal">My <span class="accent">Skills</span></h2>
+        <div class="s-line reveal"></div>
+        <div class="skills-wrap">
+            <div class="reveal d1">
+                <div class="sk-cat">// Programming Skills</div>
+                <div class="pills">
+                    <div class="pill">
+                        <div class="dot"></div>C
+                    </div>
+                    <div class="pill">
+                        <div class="dot"></div>C++
+                    </div>
+                    <div class="pill">
+                        <div class="dot"></div>JavaScript
+                    </div>
+                    <div class="pill">
+                        <div class="dot"></div>Java
+                    </div>
+                    <div class="pill">
+                        <div class="dot"></div>Python
+                    </div>
+                </div>
+            </div>
+            <div class="reveal d1">
+                <div class="sk-cat">// Frontend</div>
+                <div class="pills">
+                    <div class="pill">
+                        <div class="dot"></div>HTML5
+                    </div>
+                    <div class="pill">
+                        <div class="dot"></div>CSS3
+                    </div>
+                    <div class="pill">
+                        <div class="dot"></div>JavaScript
+                    </div>
+                    <div class="pill">
+                        <div class="dot"></div>React.js
+                    </div>
+                    <div class="pill">
+                        <div class="dot"></div>Responsive Design
+                    </div>
+                </div>
+            </div>
+            <div class="reveal d2">
+                <div class="sk-cat">// Backend & Tools</div>
+                <div class="pills">
+                    <div class="pill">
+                        <div class="dot"></div>Node.js
+                    </div>
+                    <div class="pill">
+                        <div class="dot"></div>Express.js
+                    </div>
+                    <div class="pill">
+                        <div class="dot"></div>REST APIs
+                    </div>
+                    <div class="pill">
+                        <div class="dot"></div>Git & GitHub
+                    </div>
+                </div>
+            </div>
+            <div class="reveal d3">
+                <div class="sk-cat">// AI & Emerging Tech</div>
+                <div class="pills">
+                    <div class="pill">
+                        <div class="dot"></div>Generative AI
+                    </div>
+                    <div class="pill">
+                        <div class="dot"></div>Prompt Engineering
+                    </div>
+                    <div class="pill">
+                        <div class="dot"></div>AI-Assisted Dev
+                    </div>
+                </div>
+            </div>
+            <div class="bars reveal d2">
+                <div class="bar-row">
+                    <div class="bar-head"><span class="bar-name">HTML & CSS</span><span class="bar-pct">90%</span></div>
+                    <div class="bar-track">
+                        <div class="bar-fill" data-w="0.90"></div>
+                    </div>
+                </div>
+                <div class="bar-row">
+                    <div class="bar-head"><span class="bar-name">JavaScript</span><span class="bar-pct">80%</span></div>
+                    <div class="bar-track">
+                        <div class="bar-fill" data-w="0.80"></div>
+                    </div>
+                </div>
+                <div class="bar-row">
+                    <div class="bar-head"><span class="bar-name">React.js</span><span class="bar-pct">75%</span></div>
+                    <div class="bar-track">
+                        <div class="bar-fill" data-w="0.75"></div>
+                    </div>
+                </div>
+                <div class="bar-row">
+                    <div class="bar-head"><span class="bar-name">Node.js</span><span class="bar-pct">70%</span></div>
+                    <div class="bar-track">
+                        <div class="bar-fill" data-w="0.85"></div>
+                    </div>
+                </div>
+                <div class="bar-row">
+                    <div class="bar-head"><span class="bar-name">Generative AI</span><span class="bar-pct">65%</span>
+                    </div>
+                    <div class="bar-track">
+                        <div class="bar-fill" data-w="0.65"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="s-ey reveal">Portfolio</div>
+        <h2 class="s-title reveal">Featured <span class="accent">Projects</span></h2>
+        <div class="s-line reveal"></div>
+        <div class="proj-grid">
+            <div class="p-card reveal d1">
+                <div class="p-num">01 — PROJECT</div><span class="p-icon">🌐</span>
+                <div class="p-title">Portfolio Website</div>
+                <p class="p-desc">Personal portfolio with dark theme, smooth animations and modern UI.</p>
+                <div class="p-tags"><span class="p-tag">HTML</span><span class="p-tag">CSS</span><span
+                        class="p-tag">JS</span></div>
+                <div class="p-links"><a href="#" class="p-link">↗ Live</a><a href="https://github.com/iammanusanatani" class="p-link">⌥ GitHub</a></div>
+            </div>
+            <div class="p-card reveal d2">
+                <div class="p-num">02 — PROJECT</div><span class="p-icon">⚛️</span>
+                <div class="p-title">React Dashboard</div>
+                <p class="p-desc">Dynamic web app with React.js, state management and responsive layout.</p>
+                <div class="p-tags"><span class="p-tag">React</span><span class="p-tag">JS</span><span
+                        class="p-tag">CSS3</span></div>
+                <div class="p-links"><a href="#" class="p-link">↗ Live</a><a href="https://github.com/iammanusanatani" class="p-link">⌥ GitHub</a></div>
+            </div>
+            <div class="p-card reveal d3">
+                <div class="p-num">03 — PROJECT</div><span class="p-icon">🟢</span>
+                <div class="p-title">Node.js REST API</div>
+                <p class="p-desc">RESTful backend API with Express.js and JWT authentication.</p>
+                <div class="p-tags"><span class="p-tag">Node.js</span><span class="p-tag">Express</span><span
+                        class="p-tag">API</span></div>
+                <div class="p-links"><a href="#" class="p-link">↗ Live</a><a href="https://github.com/iammanusanatani" class="p-link">⌥ GitHub</a></div>
+            </div>
+            <div class="p-card reveal d4">
+                <div class="p-num">04 — PROJECT</div><span class="p-icon">🤖</span>
+                <div class="p-title">AI-Powered App</div>
+                <p class="p-desc">Web app integrated with Generative AI APIs and prompt engineering.</p>
+                <div class="p-tags"><span class="p-tag">Gen AI</span><span class="p-tag">React</span><span
+                        class="p-tag">Node.js</span></div>
+                <div class="p-links"><a href="#" class="p-link">↗ Live</a><a href="https://github.com/iammanusanatani" class="p-link">⌥ GitHub</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" style="background:var(--bg2)">
+        <div class="s-ey reveal">Background</div>
+        <h2 class="s-title reveal">My <span class="accent">Education</span></h2>
+        <div class="s-line reveal"></div>
+        <div class="edu-wrap">
+            <div class="edu-card reveal d1">
+                <div class="edu-yr">2023 — 2026</div>
+                <div class="edu-deg">Bachelor of Computer Applications (BCA)</div>
+                <div class="edu-uni">CCS (Chaudhary Charan Singh) University</div>
+                <div class="edu-loc">📍 Meerut, Uttar Pradesh, India</div>
+            </div>
+            <div class="edu-card reveal d2">
+                <div class="edu-yr">2025 — 2026</div>
+                <div class="edu-deg">Full Stack Web Development</div>
+                <div class="edu-uni">Self-Learning & Online Learning</div>
+                <div class="edu-loc">🛠 HTML · CSS · JavaScript · React · Node.js</div>
+            </div>
+            <div class="edu-card reveal d3">
+                <div class="edu-yr">2026 — ONGOING</div>
+                <div class="edu-deg">Generative AI & Prompt Engineering</div>
+                <div class="edu-uni">Online Learning — Beginner Level</div>
+                <div class="edu-loc">🤖 AI Tools · Prompt Engineering</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="s-ey reveal">Get In Touch</div>
+        <h2 class="s-title reveal">Contact <span class="accent">Me</span></h2>
+        <div class="s-line reveal"></div>
+        <div class="contact-grid">
+            <div class="rev-l">
+                <p>Open to <strong style="color:var(--blue2)">internships</strong> and entry-level opportunities. Let's
+                    build something great together!</p>
+                <div class="c-links">
+                    <a href="mailto:manukumar@email.com" class="c-link">
+                        <div class="c-icon">📧</div>suryavanshimanu744@gmail.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/manu-kumar-73b5183b0/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BRH9iFHqkT1%2B%2Fc9SHtkqXDw%3D%3D" target="_blank" class="c-link">
+                        <div class="c-icon">💼</div>https://www.linkedin.com/in/manu-kumar
+                    </a>
+                    <a href="https://github.com/iammanusanatani" target="_blank" class="c-link">
+                        <div class="c-icon">🐙</div>https://github.com/iammanusanatani
+                    </a>
+                    <a href="#" class="c-link">
+                        <div class="c-icon">📍</div>Ghaziabad, Uttar Pradesh, India
+                    </a>
+                </div>
+            </div>
+            <div class="f-form rev-r">
+                <div class="f-grp"><label class="f-lbl">Your Name</label><input type="text" class="f-inp" id="f-name"
+                        placeholder="Your Good Name" /></div>
+                <div class="f-grp"><label class="f-lbl">Email Address</label><input type="email" class="f-inp"
+                        id="f-email" placeholder="Enter Your Email" /></div>
+                <div class="f-grp"><label class="f-lbl">Subject</label><input type="text" class="f-inp" id="f-subject"
+                        placeholder="Internship Opportunity" /></div>
+                <div class="f-grp"><label class="f-lbl">Message</label><textarea class="f-ta" id="f-msg"
+                        placeholder="Hello Manu..."></textarea></div>
+                <div id="f-status" class="f-status"></div>
+                <button class="f-btn" id="sendBtn" onclick="sendMsg(event)">Send Message →</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="f-logo">MK.DEV</div>
+        <p>© 2026 <span>Manu Kumar</span> · Built with ❤️ using HTML, CSS & JavaScript</p>
+        <p>Ghaziabad, Uttar Pradesh, India</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
